@@ -10,14 +10,19 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.App {
+  background-color: cadetblue;
+}
+
 .container {
-  max-width: 500px;
+  max-width: 700px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 1px solid #374e61;
   padding: 30px;
   border-radius: 5px;
+  background-color: #98abab;
 }
 
 .header {

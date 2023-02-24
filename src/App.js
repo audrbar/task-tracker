@@ -1,12 +1,12 @@
 import './App.css';
+import Header from './components/Header';
+import Tasks from './components/Tasks';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Labas rytas</p>
-
-      </header>
+    <div className="container">
+        <Header title="Task Tracker" />
+        <Tasks />
     </div>
   );
 }
