@@ -23,6 +23,12 @@
       "day": "2023-12-14",
       "reminder": true,
       "id": 5
+    },
+    {
+      "text": "Labas",
+      "day": "2025-02-25",
+      "reminder": false,
+      "id": 6
     }
   ]
 }
