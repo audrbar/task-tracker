@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import AddTask from "./components/AddTask";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
 
-function App() {
+const App = () => {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
     {
@@ -49,9 +49,10 @@ function App() {
     <div className="container">
       <Header
         title="Task Tracker"
-        onAdd={() => setShowAddTask(!setShowAddTask)}
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
       />
-      {showAddTask && <AddTask onAdd={AddTask} />}
+      {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
@@ -59,6 +60,6 @@ function App() {
       )}
     </div>
   );
-}
+};
 
 export default App;

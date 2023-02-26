@@ -95,7 +95,8 @@ body {
   margin: 5px;
   padding: 3px 7px;
   font-size: 17px;
-  background-color: #a2acb4;
+  border: none;
+  background-color: #a8b5b5;
 }
 
 .form-control-check {
